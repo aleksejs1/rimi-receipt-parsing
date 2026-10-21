@@ -46,3 +46,24 @@ See [docs/glyphs.md](docs/glyphs.md). Commit only the updated `src/rimi_receipts
 - Money is integer cents; never use floats for amounts.
 - New receipt features need a test — a text fixture in `tests/test_parser.py` and, if the layout is
   involved, support in `rimi_receipts.synth`.
+
+## Releasing (maintainers)
+
+1. Make sure CI is green on `main` and, if the recogniser, the parser or the glyph set changed, that
+   `rimi-receipts check` passes on a real archive.
+2. Bump `__version__` in `src/rimi_receipts/__init__.py` (semantic versioning: a change in the
+   `Receipt` data model or the CLI output is a minor version while below 1.0).
+3. Add a `## X.Y.Z — YYYY-MM-DD` section to `CHANGELOG.md`; it becomes the release notes.
+4. Commit, then tag and push:
+
+   ```bash
+   git tag -a vX.Y.Z -m "vX.Y.Z" && git push origin main vX.Y.Z
+   ```
+
+The [release workflow](.github/workflows/release.yml) checks that the tag matches the version and the
+changelog, builds the sdist and wheel, runs the tests against the built wheel, publishes to PyPI and
+creates a GitHub Release with both files attached.
+
+PyPI publishing uses [trusted publishing](https://docs.pypi.org/trusted-publishers/): no API token is
+stored anywhere. It is configured once on PyPI for the project `rimi-receipt-parsing` with owner
+`aleksejs1`, repository `rimi-receipt-parsing`, workflow `release.yml` and environment `pypi`.

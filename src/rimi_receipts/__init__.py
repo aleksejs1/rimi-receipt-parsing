@@ -17,7 +17,7 @@ from .ocr import RecognizedLine, recognize
 from .parser import Discount, Item, LoyaltyLine, Payment, Receipt, VatLine, parse_lines, validate
 from .pdf import NotARimiReceiptError, load_image, load_ink
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # Characters recognised with a smaller margin than this are reported in
 # Receipt.low_confidence (on ~1000 real receipts: about 0.04 % of characters).

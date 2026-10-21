@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "rimi-receipt-parsing"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Offline, dependency-light parser for Rimi Latvia e-receipts (PDF) with checksum validation — no OCR engine, no AI."
 readme = "README.md"
 license = "MIT"
@@ -15,16 +15,20 @@ keywords = ["rimi", "receipt", "parser", "ocr", "latvia", "pdf", "groceries"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Natural Language :: Latvian",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Office/Business :: Financial",
     "Topic :: Scientific/Engineering :: Image Recognition",
     "Typing :: Typed",
 ]
 dependencies = [
-    "numpy>=1.24",
+    "numpy>=1.26",
     "pillow>=10.1",
     "pypdf>=4.0",
 ]
@@ -40,13 +44,18 @@ rimi-receipts = "rimi_receipts.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/aleksejs1/rimi-receipt-parsing"
+Documentation = "https://github.com/aleksejs1/rimi-receipt-parsing/tree/main/docs"
+Changelog = "https://github.com/aleksejs1/rimi-receipt-parsing/blob/main/CHANGELOG.md"
 Issues = "https://github.com/aleksejs1/rimi-receipt-parsing/issues"
+
+[tool.hatch.version]
+path = "src/rimi_receipts/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/rimi_receipts"]
 
 [tool.hatch.build.targets.sdist]
-include = ["src", "tests", "docs", "samples", "README.md", "LICENSE", "CHANGELOG.md"]
+include = ["src", "tests", "docs", "samples", "README.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

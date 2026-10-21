@@ -1,0 +1,83 @@
+name: Release
+
+# Pushing a tag vX.Y.Z builds the package, tests the built wheel, publishes it to PyPI
+# (trusted publishing, no API token) and creates a GitHub Release with the files attached.
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Tag must match the package version
+        run: |
+          VERSION=$(python -c "import re; print(re.search(r'__version__ = \"(.+?)\"', open('src/rimi_receipts/__init__.py').read()).group(1))")
+          echo "package version: $VERSION, tag: $GITHUB_REF_NAME"
+          test "v$VERSION" = "$GITHUB_REF_NAME"
+
+      - name: Changelog must have an entry for this version
+        run: grep -q "^## ${GITHUB_REF_NAME#v} " CHANGELOG.md
+
+      - name: Build sdist and wheel
+        run: |
+          pip install build twine
+          python -m build
+          twine check --strict dist/*
+
+      - name: Test the built wheel, not the source tree
+        run: |
+          pip install dist/*.whl pytest
+          # src/ layout: the source package is not importable from the repo root, so tests use the wheel
+          python -c "import rimi_receipts, sys; assert 'site-packages' in rimi_receipts.__file__, rimi_receipts.__file__"
+          pytest -q
+          rimi-receipts check samples
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist/
+          if-no-files-found: error
+
+  pypi:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/rimi-receipt-parsing/
+    permissions:
+      id-token: write  # trusted publishing
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@release/v1
+
+  github-release:
+    needs: pypi
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist/
+      - name: Create the release with notes from CHANGELOG.md
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          awk -v v="$VERSION" '$0 ~ "^## "v" " {on=1; next} /^## / {on=0} on' CHANGELOG.md > notes.md
+          gh release create "$GITHUB_REF_NAME" dist/* --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag

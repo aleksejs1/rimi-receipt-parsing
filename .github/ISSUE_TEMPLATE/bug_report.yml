@@ -1,0 +1,36 @@
+name: Bug report
+description: A receipt that does not parse or does not add up
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please do not attach real receipts.** They contain personal data (masked card numbers,
+        transaction IDs, where and when you shopped). Paste only the relevant lines below, with
+        personal fields replaced, or reproduce the problem with `rimi-receipts synth`.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `rimi-receipts --version`
+    validations:
+      required: true
+  - type: textarea
+    id: errors
+    attributes:
+      label: Validation errors or traceback
+      description: From `rimi-receipts check` or `rimi-receipts parse`
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: lines
+    attributes:
+      label: Relevant recognised lines
+      description: From `rimi-receipts parse --format text`, with personal fields replaced
+      render: text
+  - type: input
+    id: date
+    attributes:
+      label: Receipt date (month is enough)
+      description: Helps to tell a layout change from a recognition error
