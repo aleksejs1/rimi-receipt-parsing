@@ -85,6 +85,7 @@ from pathlib import Path
 from rimi_receipts import parse_pdf
 from rimi_receipts.fetch import FetchConfig, fetch_receipts
 
-stats = fetch_receipts(FetchConfig(host="imap.gmail.com", user="you@gmail.com", password="…",
-                                   out_dir=Path("rimi-receipts")))
+stats = fetch_receipts(
+    FetchConfig(host="imap.gmail.com", user="you@gmail.com", password="…", out_dir=Path("rimi-receipts"))
+)
 ```

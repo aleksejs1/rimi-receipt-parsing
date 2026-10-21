@@ -122,8 +122,8 @@ rimi-receipts parse receipt.pdf --format text                    # the recognise
 ```python
 from rimi_receipts import parse_pdf
 
-receipt = parse_pdf("receipt.pdf")          # path, bytes or a binary file object
-assert receipt.validate() == []             # every checksum adds up
+receipt = parse_pdf("receipt.pdf")  # path, bytes or a binary file object
+assert receipt.validate() == []  # every checksum adds up
 
 print(receipt.issued_at, receipt.store, receipt.total_cents / 100)
 for item in receipt.items:

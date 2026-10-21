@@ -15,9 +15,10 @@ You can inspect the set with:
 
 ```python
 from rimi_receipts import default_glyphs
+
 g = default_glyphs()
 print(len(g.chars), g.alphabet)
-img = g.image("ķ")   # numpy array (14, 8)
+img = g.image("ķ")  # numpy array (14, 8)
 ```
 
 ## How the set was built
