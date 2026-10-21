@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rimi-receipt-parsing"
+version = "0.1.0"
+description = "Offline, dependency-light parser for Rimi Latvia e-receipts (PDF) with checksum validation — no OCR engine, no AI."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Aleksejs Kovalovs" }]
+keywords = ["rimi", "receipt", "parser", "ocr", "latvia", "pdf", "groceries"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Latvian",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pillow>=10.1",
+    "pypdf>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+rimi-receipts = "rimi_receipts.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/aleksejs1/rimi-receipt-parsing"
+Issues = "https://github.com/aleksejs1/rimi-receipt-parsing/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rimi_receipts"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "docs", "samples", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]  # Latvian diacritics and typographic characters are intentional

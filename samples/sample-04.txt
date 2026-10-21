@@ -1,0 +1,67 @@
+SAMPLE
+SIA PARAUGS
+Jur. adrese: Parauga iela 1, Rīga
+Example Store (Rīga)
+Kase Nr. 04
+PVN maksātāja numurs: LV00000000000
+Šasijas numurs: SP-LV00000
+---------------- Čeks ------------------
+--------- Elektroniska izdruka ---------
+KLIENTS:            XXXXXXXXXXXXXXX1089
+----------------------------------------
+Āboli Gala 1. šķira kg
+ 1,625 kg X 1,99 EUR/kg           3,23 F
+ Atl. -0,64   Gala cena 2,59
+Šokolāde piena ar riekstiem
+100g
+ 1 gab X 1,79 EUR                 1,79 A
+ Atl. -0,17   Gala cena 1,62
+Jogurts ar zemenēm 2% 380g
+ 1 gab X 1,59 EUR                 1,59 A
+Jogurts ar zemenēm 2% 380g
+ 1 gab X 1,59 EUR                 1,59 A
+--------------Korekcija-----------------
+Jogurts ar zemenēm 2% 380g
+ 1 gab X 1,59 EUR                -1,59 A
+Zaļā tēja 20x1,5g
+ 1 gab X 1,59 EUR                 1,59 A
+ Atl. -0,39   Gala cena 1,20
+----------------------------------------
+ATLAIDES:
+Citas akcijas                    -0,81
+Zaļā tēja 20x1,5g                -0,39
+                              ----------
+Tavs ietaupījums                  1,20
+----------------------------------------
+Maksājumu karte
+Apmaksa
+BEZKONTAKTA KARTE
+VISA BEZKONTAKTA
+BANKAS KVĪTS NR.                  286426
+TERMINĀLA ID                    00000000
+TIRGOTĀJA ID                     0000000
+LAIKS                2025-02-24 14:30:09
+Visa                    ************0000
+KOPĀ:                           7,00 EUR
+Autorizācijas Nr       359336        T:1
+SAGLABĀJIET DOKUMENTU KONTA PĀRBAUDEI
+----------------------------------------
+Nopelnītā Mans Rimi nauda           0,07
+Mans Rimi naudas uzkrājums          4,94
+Ietaupījums ar Mans Rimi karti
+šomēnes                            11,96
+----------------------------------------
+Samaksai EUR
+----------------------------------------
+Nodoklis      Ar PVN   Bez PVN PVN summa
+A 21,00 %       4,41      3,64      0,77
+F  5,00 %       2,59      2,47      0,12
+Bankas karte                        7,00
+----------------------------------------
+Dok. Nr.: 23/297120 Kase 0004
+FB numurs: 052257498017782
+                               #00421809
+
+  2025-02-24 14:30:09
+0996dd9de5798121e8fa462d6e85bda6a317873a
+59e01b29a0a9a4d296e948c5a0b1e5bb93e6d631

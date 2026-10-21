@@ -1,0 +1,62 @@
+SAMPLE
+SIA PARAUGS
+Jur. adrese: Parauga iela 1, Rīga
+Example Store (Rīga)
+Kase Nr. 04
+PVN maksātāja numurs: LV00000000000
+Šasijas numurs: SP-LV00000
+---------------- Čeks ------------------
+--------- Elektroniska izdruka ---------
+KLIENTS:            XXXXXXXXXXXXXXX9516
+----------------------------------------
+Piens Rimi 2,5% 1l
+ 1 gab X 1,09 EUR                 1,09 A
+Mandarīni kg
+ 2,076 kg X 2,49 EUR/kg           5,17 F
+Ievārījums upeņu 400g
+ 2 gab X 2,29 EUR                 4,58 A
+Ievārījums upeņu 400g
+ 2 gab X 2,29 EUR                 4,58 A
+--------------Korekcija-----------------
+Ievārījums upeņu 400g
+ 2 gab X 2,29 EUR                -4,58 A
+Zaļā tēja 20x1,5g
+ 1 gab X 1,59 EUR                 1,59 A
+----------------------------------------
+ATLAIDES:
+Izmantotā Mans Rimi nauda        -1,20
+                              ----------
+Tavs ietaupījums                  1,20
+----------------------------------------
+Maksājumu karte
+Apmaksa
+BEZKONTAKTA KARTE
+VISA BEZKONTAKTA
+BANKAS KVĪTS NR.                  877258
+TERMINĀLA ID                    00000000
+TIRGOTĀJA ID                     0000000
+LAIKS                2026-09-05 13:58:38
+Visa                    ************0000
+KOPĀ:                          11,23 EUR
+Autorizācijas Nr       115882        T:1
+SAGLABĀJIET DOKUMENTU KONTA PĀRBAUDEI
+----------------------------------------
+Nopelnītā Mans Rimi nauda           0,11
+Mans Rimi naudas uzkrājums          6,97
+Ietaupījums ar Mans Rimi karti
+šomēnes                            32,33
+----------------------------------------
+Samaksai EUR
+----------------------------------------
+Nodoklis      Ar PVN   Bez PVN PVN summa
+A 21,00 %       6,06      5,01      1,05
+F  5,00 %       5,17      4,92      0,25
+Bankas karte                       11,23
+----------------------------------------
+Dok. Nr.: 17/93571 Kase 0004
+FB numurs: 016024082902378
+                               #00472135
+
+  2026-09-05 13:58:38
+908fcdce4b314f68d9dcbd7a085a368932ff2b2d
+409dd311ca871902316d9841aab4ccec38d79d89

@@ -1,0 +1,59 @@
+SAMPLE
+SIA PARAUGS
+Jur. adrese: Parauga iela 1, Rīga
+Example Store (Rīga)
+Kase Nr. 05
+PVN maksātāja numurs: LV00000000000
+Šasijas numurs: SP-LV00000
+---------------- Čeks ------------------
+--------- Elektroniska izdruka ---------
+KLIENTS:            XXXXXXXXXXXXXXX8684
+----------------------------------------
+Burkāni kg
+ 0,613 kg X 0,79 EUR/kg           0,48 F
+ Atl. -0,09   Gala cena 0,39
+Cepumi auzu ar rozīnēm 300g
+ 2 gab X 1,49 EUR                 2,98 A
+Jogurts ar zemenēm 2% 380g
+ 1 gab X 1,59 EUR                 1,59 A
+Rīsi garengraudu 1kg
+ 1 gab X 1,89 EUR                 1,89 A
+----------------------------------------
+ATLAIDES:
+Burkāni kg                       -0,09
+Izmantotā Mans Rimi nauda        -0,50
+                              ----------
+Tavs ietaupījums                  0,59
+----------------------------------------
+Maksājumu karte
+Apmaksa
+BEZKONTAKTA KARTE
+VISA BEZKONTAKTA
+BANKAS KVĪTS NR.                  245508
+TERMINĀLA ID                    00000000
+TIRGOTĀJA ID                     0000000
+LAIKS                2026-06-26 19:53:47
+Visa                    ************0000
+KOPĀ:                           6,35 EUR
+Autorizācijas Nr       747942        T:1
+SAGLABĀJIET DOKUMENTU KONTA PĀRBAUDEI
+----------------------------------------
+Nopelnītā Mans Rimi nauda           0,06
+Mans Rimi naudas uzkrājums          6,42
+Ietaupījums ar Mans Rimi karti
+šomēnes                            18,72
+----------------------------------------
+Samaksai EUR
+----------------------------------------
+Nodoklis      Ar PVN   Bez PVN PVN summa
+A 21,00 %       5,96      4,93      1,03
+F  5,00 %       0,39      0,37      0,02
+Bankas karte                        6,35
+----------------------------------------
+Dok. Nr.: 33/79332 Kase 0005
+FB numurs: 010751066964394
+                               #00595463
+
+  2026-06-26 19:53:47
+66559a6656c90bd5482a90a29b9fa5ff5180bc0d
+bc0e15637ebb8e3b91d26ab4a829a95249f512c1

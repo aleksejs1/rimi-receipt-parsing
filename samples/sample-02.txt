@@ -1,0 +1,65 @@
+SAMPLE
+SIA PARAUGS
+Jur. adrese: Parauga iela 1, Rīga
+Example Store (Rīga)
+Kase Nr. 01
+PVN maksātāja numurs: LV00000000000
+Šasijas numurs: SP-LV00000
+---------------- Čeks ------------------
+--------- Elektroniska izdruka ---------
+KLIENTS:            XXXXXXXXXXXXXXX5048
+----------------------------------------
+Žāvētas aprikozes 200g
+ 2 gab X 2,99 EUR                 5,98 A
+Konservēti zirnīši ar
+burkāniem Rimi 400g
+ 3 gab X 1,15 EUR                 3,45 A
+Maize rudzu Rimi 400g
+ 2 gab X 1,35 EUR                 2,70 A
+Šokolāde piena ar riekstiem
+100g
+ 1 gab X 1,79 EUR                 1,79 A
+ Atl. -0,44   Gala cena 1,35
+Zobu pasta Mint 75ml
+ 2 gab X 1,99 EUR                 3,98 A
+Sviests 82% 200g
+ 3 gab X 3,29 EUR                 9,87 A
+ Atl. -1,97   Gala cena 7,90
+----------------------------------------
+ATLAIDES:
+Citas akcijas                    -0,44
+Sviests 82% 200g                 -1,97
+                              ----------
+Tavs ietaupījums                  2,41
+----------------------------------------
+Maksājumu karte
+Apmaksa
+BEZKONTAKTA KARTE
+VISA BEZKONTAKTA
+BANKAS KVĪTS NR.                  243337
+TERMINĀLA ID                    00000000
+TIRGOTĀJA ID                     0000000
+LAIKS                2024-02-12 21:10:47
+Visa                    ************0000
+KOPĀ:                          25,36 EUR
+Autorizācijas Nr       634948        T:1
+SAGLABĀJIET DOKUMENTU KONTA PĀRBAUDEI
+----------------------------------------
+Nopelnītā Mans Rimi nauda           0,25
+Mans Rimi naudas uzkrājums          5,32
+Ietaupījums ar Mans Rimi karti
+šomēnes                            15,23
+----------------------------------------
+Samaksai EUR
+----------------------------------------
+Nodoklis      Ar PVN   Bez PVN PVN summa
+A 21,00 %      25,36     20,96      4,40
+Bankas karte                       25,36
+----------------------------------------
+Dok. Nr.: 132/105338 Kase 0001
+FB numurs: 059789809896292
+                               #00197782
+
+  2024-02-12 21:10:47
+be5ce7f8fbeebef7a58f99d96fb2a06311873487
+61d11bb570232010b84550c17410b39af09e18c4
