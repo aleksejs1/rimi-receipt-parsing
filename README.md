@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/aleksejs1/rimi-receipt-parsing/actions/workflows/ci.yml/badge.svg)](https://github.com/aleksejs1/rimi-receipt-parsing/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/rimi-receipt-parsing)](https://pypi.org/project/rimi-receipt-parsing/)
-![Python](https://img.shields.io/pypi/pyversions/rimi-receipt-parsing)
+[![Python](https://img.shields.io/pypi/pyversions/rimi-receipt-parsing?v=1)](https://pypi.org/project/rimi-receipt-parsing/)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 Turn **Rimi Latvia e-receipts** (the PDF attached to every *"Tavs pirkuma čeks"* e-mail) into structured data —
